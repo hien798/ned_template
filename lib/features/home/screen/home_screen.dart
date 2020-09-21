@@ -18,13 +18,19 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Container(
               alignment: Alignment.center,
-              child: Text('Ned Book'),
+              child: Container(),
             ),
             Column(
               children: [
                 Expanded(
                   flex: 3,
-                  child: Container(),
+                  child: Container(
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      width: 150,
+                      height: 150,
+                    ),
+                  ),
                 ),
                 Expanded(
                   flex: 2,
@@ -64,7 +70,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         onPressed: () {
                           Navigator.of(context).pushNamedAndRemoveUntil(
-                              SignInScreen.route, (Route<dynamic> route) => false);
+                              SignInScreen.route,
+                              (Route<dynamic> route) => false);
                         },
                       ),
                     ],

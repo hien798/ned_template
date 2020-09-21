@@ -3,7 +3,7 @@ import 'package:ned_template/core/application.dart';
 import 'package:ned_template/features/auth/screen/sign_in.dart';
 import 'package:ned_template/features/auth/screen/sign_up.dart';
 import 'package:ned_template/features/home/screen/home_screen.dart';
-import 'package:ned_template/features/splash/screen/splash_screen.dart';
+import 'package:ned_template/features/splash/splash_screen.dart';
 
 var bootStage = 1;
 

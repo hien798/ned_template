@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:ned_template/features/auth/screen/sign_in.dart';
-import 'package:ned_template/features/home/screen/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -18,7 +17,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Center(child: Text('Ned Book')),
+      child: Center(
+        child: Image.asset(
+          'assets/images/logo.png',
+          width: 120,
+          height: 120,
+        ),
+      ),
     );
   }
 
